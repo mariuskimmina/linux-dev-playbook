@@ -1,0 +1,8 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: true
+configure_terminal: true
+
+apt_packages:
+  - openssl
