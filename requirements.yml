@@ -2,3 +2,5 @@
 roles:
   - name: mariuskimmina.dotfiles
 
+collections:
+  - name: mariuskimmina.dev
