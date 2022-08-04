@@ -5,3 +5,10 @@ configure_dotfiles: true
 
 apt_packages:
   - openssl
+
+# go config
+go_version: '1.18.1'
+go_url: 'https://go.dev/dl/go1.18.1.linux-amd64.tar.gz'
+go_dir: '/usr/local/go/'
+go_dest: '/usr/local/'
+go_download_dir: '/tmp/ansible/downloads'

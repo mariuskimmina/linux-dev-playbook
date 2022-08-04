@@ -8,5 +8,6 @@
     - role: mariuskimmina.dotfiles
       when: configure_dotfiles
       tags: ['dotfiles']
-    - role: mariuskimmina.dev.go
-      tags: ['go']
+
+  tasks:
+    import-tasks: tasks/go-setup.yml
