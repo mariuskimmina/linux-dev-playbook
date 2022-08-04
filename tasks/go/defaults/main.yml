@@ -1,0 +1,10 @@
+---
+go_version: '1.18.1'
+
+go_url: 'https://go.dev/dl/go1.18.1.linux-amd64.tar.gz'
+
+go_dir: '/usr/local/go/'
+go_dest: '/usr/local/'
+
+# Directory to store files during installation
+go_download_dir: '/tmp/ansible/downloads'
