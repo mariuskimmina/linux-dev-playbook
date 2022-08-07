@@ -10,5 +10,5 @@
       tags: ['dotfiles']
 
   tasks:
-    - import-tasks: tasks/go-setup.yml
-    - import-tasks: tasks/nvim-setup.yml
+    - import_tasks: tasks/go-setup.yml
+    - import_tasks: tasks/nvim-setup.yml
