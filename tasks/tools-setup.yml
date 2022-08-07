@@ -1,0 +1,11 @@
+- name: kdenlive ppa (ppa:kdenlive/kdenlive-stable)
+  become: true
+  apt_repository:
+   repo: ppa:kdenlive/kdenlive-stable
+   state: present
+   update_cache: True
+
+- name: Install packages
+  become: true
+  apt:
+    name: ["tmux", "wireshark", "fzf", "kdenlive", "gimp", "xclip", "tldr", "ripgrep"]

@@ -1,6 +1,7 @@
 ---
 - hosts: all
 
+
   vars_files:
     - default.config.yml
 
@@ -12,4 +13,7 @@
   tasks:
     - import_tasks: tasks/build-setup.yml
     - import_tasks: tasks/go-setup.yml
+    - import_tasks: tasks/brave-setup.yml
     - import_tasks: tasks/nvim-setup.yml
+    - import_tasks: tasks/lsp-setup.yml
+    - import_tasks: tasks/tools-setup.yml

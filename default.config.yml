@@ -2,6 +2,7 @@
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: true
+tools: "{{ lookup('env', 'HOME') }}/tools"  
 
 apt_packages:
   - openssl
