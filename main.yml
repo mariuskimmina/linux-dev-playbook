@@ -1,11 +1,10 @@
 ---
 - hosts: all
-
-
   vars_files:
     - default.config.yml
 
-  tasks:
+  # Using pre_tasks to make sure tasks run first
+  pre_tasks:
     - import_tasks: tasks/build-setup.yml
     - import_tasks: tasks/font-setup.yml
     - import_tasks: tasks/go-setup.yml
@@ -15,6 +14,8 @@
     - import_tasks: tasks/tools-setup.yml
     - import_tasks: tasks/zsh-setup.yml
 
+  # after everything is installed from the task we bring in our configurations
+  # these live in a seperate role
   roles:
     - role: mariuskimmina.dotfiles
       when: configure_dotfiles
