@@ -1,6 +1,6 @@
 - name: ensure fonts directory
   file:
-    path: "{{ lookup('env', 'HOME') }}/.fonts"
+    path: "{{ lookup('env', 'HOME') }}/.fonts/"
     state: directory
 
 - name: Hack exists
