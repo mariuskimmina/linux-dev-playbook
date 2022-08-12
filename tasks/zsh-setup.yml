@@ -7,6 +7,10 @@
 - name: install oh-my-zsh
   shell: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-
 - name: setup oh-my-zsh
   shell: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+- name: remove default zsh config
+  file:
+    name: "~/.zshrc" 
+    state: absent
