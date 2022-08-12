@@ -12,7 +12,7 @@
 - name: Install System Packages 3 (the rest)
   become: true
   apt:
-    name: ["curl", "htop", "lsof", "ccache", "python3-pip", "clangd"]
+    name: ["curl", "htop", "lsof", "ccache", "python3-pip", "clangd", "ninja-build"]
 
 - name: Install Clang
   become: true
