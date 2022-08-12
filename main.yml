@@ -5,15 +5,17 @@
   vars_files:
     - default.config.yml
 
-  roles:
-    - role: mariuskimmina.dotfiles
-      when: configure_dotfiles
-      tags: ['dotfiles']
-
   tasks:
     - import_tasks: tasks/build-setup.yml
+    - import_tasks: tasks/font-setup.yml
     - import_tasks: tasks/go-setup.yml
     - import_tasks: tasks/brave-setup.yml
     - import_tasks: tasks/nvim-setup.yml
     - import_tasks: tasks/lsp-setup.yml
     - import_tasks: tasks/tools-setup.yml
+    - import_tasks: tasks/zsh-setup.yml
+
+  roles:
+    - role: mariuskimmina.dotfiles
+      when: configure_dotfiles
+      tags: ['dotfiles']

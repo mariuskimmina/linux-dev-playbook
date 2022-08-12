@@ -5,7 +5,7 @@
    state: present
    update_cache: True
 
-- name: Install packages
+- name: Install tools from apt (tmux, wireshark, fzf .....)
   become: true
   apt:
     name: ["tmux", "wireshark", "fzf", "kdenlive", "gimp", "xclip", "tldr", "ripgrep"]
