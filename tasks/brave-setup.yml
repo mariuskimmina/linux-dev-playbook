@@ -4,11 +4,11 @@
     name: ["curl", "apt-transport-https"]
 
 - name: Brave Browser archive-keyring.gpg download
+  become: true
   get_url:
     url: https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
     dest: /etc/apt/keyrings/brave-browser-archive-keyring.gpg
     mode: 0644
-    force: true
 
 - name: Brave Browser PPA setting
   become: true
