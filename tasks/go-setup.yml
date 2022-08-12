@@ -5,6 +5,7 @@
   register: go_installed
 
 - name: Remove go if it was already present
+  become: true
   ansible.builtin.file:
     path: "{{ go_dir}}"
     state: absent
@@ -23,7 +24,7 @@
   register: go_downloaded
 
 - name: Install go
-  become: yes
+  become: true
   ansible.builtin.unarchive:
     src: /tmp/go.tar.gz
     dest: "{{ go_dest }}"
