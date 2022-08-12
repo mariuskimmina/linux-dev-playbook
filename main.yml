@@ -12,6 +12,7 @@
     - import_tasks: tasks/nvim-setup.yml
     - import_tasks: tasks/lsp-setup.yml
     - import_tasks: tasks/tools-setup.yml
+    - import_tasks: tasks/terminal-setup.yml
     - import_tasks: tasks/zsh-setup.yml
 
   # after everything is installed from the task we bring in our configurations
