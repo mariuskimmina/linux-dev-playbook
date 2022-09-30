@@ -6,7 +6,14 @@ any adjustments won't really be useful to you.
 
 ## Installation
 
-1. [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/index.html):
-2. Clone or download this repository to your local drive.
-3. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
-4. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. Enter your sudo password when prompted for the 'BECOME' password.
+### Preparation Steps for PopOS 22.04
+
+1. `sudo apt install python3-pip`
+2. `pip3 install ansible`
+3. `sudo apt install ansible`
+
+### Using this playbook
+
+1. Clone or download this repository to your local drive.
+2. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
+3. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. Enter your sudo password when prompted for the 'BECOME' password.
