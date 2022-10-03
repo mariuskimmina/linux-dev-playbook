@@ -1,6 +1,7 @@
 - name: Alacritty PPA
+  become: true
   apt_repository:
-    validate_certs: yes
+    validate_certs: no
     repo: 'ppa:aslatter/ppa'
     state: present
 
