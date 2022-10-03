@@ -18,6 +18,9 @@
   # after everything is installed from the task we bring in our configurations
   # these live in a seperate role
   roles:
+    - role: islander.alacritty
+      tags: ['terminal']
     - role: mariuskimmina.dotfiles
       when: configure_dotfiles
       tags: ['dotfiles']
+

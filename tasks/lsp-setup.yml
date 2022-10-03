@@ -1,15 +1,15 @@
-- name: Download lua lsp
-  ansible.builtin.git:
-    repo: "https://github.com/sumneko/lua-language-server.git"
-    recursive: yes
-    dest: "{{ tools }}/sumneko"
+#- name: Download lua lsp
+#ansible.builtin.git:
+#repo: "https://github.com/sumneko/lua-language-server.git"
+#recursive: yes
+#dest: "{{ tools }}/sumneko"
 
-- name: pepare the lua lsp built
-  ansible.builtin.shell:
-    cmd: ./compile/install.sh
-    chdir: "{{ tools }}/sumneko/3rd/luamake"
+#- name: pepare the lua lsp built
+#ansible.builtin.shell:
+#cmd: ./compile/install.sh
+#chdir: "{{ tools }}/sumneko/3rd/luamake"
 
-- name: Built the lua lsp
-  ansible.builtin.shell:
-    cmd: ./3rd/luamake/luamake rebuild
-    chdir: "{{ tools }}/sumneko/"
+#- name: Built the lua lsp
+#ansible.builtin.shell:
+#cmd: ./3rd/luamake/luamake rebuild
+#chdir: "{{ tools }}/sumneko/"
