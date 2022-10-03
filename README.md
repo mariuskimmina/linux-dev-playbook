@@ -17,3 +17,8 @@ any adjustments won't really be useful to you.
 1. Clone or download this repository to your local drive.
 2. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
 3. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. Enter your sudo password when prompted for the 'BECOME' password.
+
+
+### Credit
+
+Inspired by: https://github.com/geerlingguy/mac-dev-playbook
