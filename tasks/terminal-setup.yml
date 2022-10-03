@@ -1,5 +1,5 @@
-#- name: Install alacritty
-#become: true
-#apt:
-#name: alacritty
-      #state: present
+- name: Install alacritty
+  become: true
+  apt:
+    name: alacritty
+    state: present
